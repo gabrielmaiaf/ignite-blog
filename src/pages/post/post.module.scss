@@ -1,1 +1,70 @@
-// TODO
+.banner {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.postContainer {
+  margin-top: 5rem;
+
+  h1 {
+    color: var(--gray-50);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.625rem;
+  }
+}
+
+.infoContainer {
+  margin: 1.625rem 0 4.125rem;
+  color: var(--gray-300);
+
+  &>* {
+    margin-right: 1.625rem;
+    display: inline-flex;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+}
+
+.contentWrapper {
+  margin-bottom: 5rem;
+}
+
+.blockContainer {
+  margin-bottom: 3rem;
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 3.125rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  ul,
+  li,
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    font-weight: 400;
+    text-align: justify;
+
+    &+ul,
+    &+li,
+    &+p {
+      margin-top: 1.5rem;
+    }
+  }
+
+  a {
+    color: var(--pink);
+  }
+}
